@@ -75,18 +75,19 @@ GEM
     crass (1.0.4)
     erubi (1.7.1)
     execjs (2.7.0)
+    faraday (0.15.2)
+      multipart-post (>= 1.2, < 3)
+    faraday_middleware (0.12.2)
+      faraday (>= 0.7.4, < 1.0)
     ffi (1.9.23)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
-    httparty (0.16.2)
-      multi_xml (>= 0.5.2)
     i18n (1.0.1)
       concurrent-ruby (~> 1.0)
     io-like (0.3.0)
     jbuilder (2.7.0)
       activesupport (>= 4.2.0)
       multi_json (>= 1.2)
-    json (2.1.0)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -105,7 +106,7 @@ GEM
     minitest (5.11.3)
     msgpack (1.2.4)
     multi_json (1.13.1)
-    multi_xml (0.6.0)
+    multipart-post (2.0.0)
     nio4r (2.3.1)
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
@@ -178,9 +179,9 @@ GEM
     turbolinks (5.1.1)
       turbolinks-source (~> 5.1)
     turbolinks-source (5.1.0)
-    twitch (0.1.3)
-      httparty
-      json
+    twitch-api (0.2.0)
+      faraday (~> 0.13)
+      faraday_middleware (~> 0.12)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
     uglifier (4.1.10)
@@ -216,7 +217,7 @@ DEPENDENCIES
   spring-watcher-listen (~> 2.0.0)
   sqlite3
   turbolinks (~> 5)
-  twitch
+  twitch-api
   tzinfo-data
   uglifier (>= 1.3.0)
   web-console (>= 3.3.0)
