@@ -1,24 +1,42 @@
-# README
+## Objectifs des exercices
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Jouer avec les APi Gmap et Twitch.<br/>
+[Voir et tester l'App sur Heroku](shielded-basin-49859.herokuapp.com)
 
-Things you may want to cover:
 
-* Ruby version
+## A savoir :
+Pensez à cliquer sur le marker Gmap pour voir le texte. Je suis malade et je n'ai pas pu finir Twitch :(
+  
+## Lancer l'app en local
 
-* System dependencies
+```
+$ cd nom_du_dossier
+$ bundle install --without production
+$ rails db:create
+$ rails db:migrate
+```
 
-* Configuration
+## Pré-requis
 
-* Database creation
+Projet libre de droit et d'accès à la lecture/écriture. 
+Pour pouvoir visualiser le projet, un simple navigateur suffit.
 
-* Database initialization
 
-* How to run the test suite
+```
+Firefox, Safari, Chrome, Internet Explorer 8, ...
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+## Construit avec
 
-* Deployment instructions
+* Visual Studio Code
+* GitHub
+* Heroku
 
-* ...
+
+## Contributors
+
+* Quentin : https://github.com/QUB-SPG
+
+## Slack
+
+* Quentin : @Quentin
